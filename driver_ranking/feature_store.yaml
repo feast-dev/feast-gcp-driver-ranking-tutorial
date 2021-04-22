@@ -1,0 +1,3 @@
+project: driver_ranking
+registry: data/registry.db
+provider: local
