@@ -36,7 +36,7 @@ cd ..
 ```
 
 
-5. Test your model with a local sqlite online store
+5. Test your model with your local sqlite online store
 
 ```
 python predict.py
@@ -60,7 +60,7 @@ feast materialize-incremental 2022-01-01T00:00:00
 cd ..
 ```
 
-7.  Test your model with a remote Firestore online store
+7.  Test your model with your remote Firestore online store
 
 ```
 python predict.py
