@@ -1,6 +1,13 @@
 # Feast Driver Ranking Example
 
-## Tutorial
+### Overview
+
+This tutorial uses Feast with Scikit Learn to
+1. Train a model locally using data from BigQuery
+2. Test the model for online inference using Sqlite (for fast iteration)
+3. Test the model for online inference using Firestore (to represent production)
+
+### Tutorial
 
 1. Install Feast
 ```
@@ -29,13 +36,13 @@ cd ..
 ```
 
 
-5. Test model with local sqlite feature store
+5. Test your model with a local sqlite online store
 
 ```
 python predict.py
 ```
 
-6. Set up your production feature store with GCP
+6. Set up your production feature store with GCP (uses Google Firestore)
 
 Ensure that Google cloud has been configured
 ```
@@ -53,14 +60,13 @@ feast materialize-incremental 2022-01-01T00:00:00
 cd ..
 ```
 
-5. Test model with local sqlite feature store
+7.  Test your model with a remote Firestore online store
 
 ```
 python predict.py
 ```
 
-
-## Advanced
+### Advanced
 
 For production use its preferred to use a Google Cloud Storage based registry instead of a local folder. This allows 
 multiple production systems to share the same source of truth for feature definitions.
