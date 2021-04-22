@@ -68,7 +68,7 @@ python predict.py
 
 ### Advanced
 
-For production use its preferred to use a Google Cloud Storage based registry instead of a local folder. This allows 
+For production use its preferred to use a Google Cloud Storage based registry instead of a local repository. This allows 
 multiple production systems to share the same source of truth for feature definitions.
 
 Change `feature_store.yaml` to
