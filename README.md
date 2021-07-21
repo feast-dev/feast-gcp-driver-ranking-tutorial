@@ -2,21 +2,29 @@
 
 ### Overview
 
-This tutorial uses Feast with Scikit Learn to
-1. Train a model locally using data from BigQuery
-2. Test the model for online inference using Sqlite (for fast iteration)
-3. Test the model for online inference using Firestore (to represent production)
+Making a prediction using a linear regression model is a common use case in ML. In this guide tutorial, we build the model that predicts if a driver will complete a trip based on a number of features ingested into Feast.
+
+The basic local mode gives you ability to quickly try Feast, while the advanced mode shows how you can use Feast in a production setting, in particular for the Google Cloud Platform (GCP) cloud. 
+
+This tutorial uses Feast with [Scikit Learn](https://scikit-learn.org/stable/) to
+1. Train a model locally using data from [BigQuery](https://cloud.google.com/bigquery/)
+2. Test the model for online inference using [SQLite](https://www.sqlite.org/index.html) (for fast iteration)
+3. Test the model for online inference using [Firestore](https://firebase.google.com/products/firestore) (to represent production)
+
+
+### Prerequisites 
+To successfully run this tutorial, it requires that you have an account on GCP and have access to read and write permissions to BigQuery. Also, you need to install [Google Cloud CLI](https://cloud.google.com/sdk/gcloud) for your localhost platform.
 
 ### Tutorial
 
-1. Install Feast
+1. Install Feast and scikit-learn
 ```
-pip install feast scikit-learn
+pip install feast scikit-learn 'feast[gcp]'
 ```
 
-(tested with Feast==0.10.2)
+(This tutorial has been tested with Feast==0.11.0)
 
-2. Set up a local feature store
+2. Set up a local feature store (on your laptop).
 ```
 cd driver_ranking/
 feast apply
