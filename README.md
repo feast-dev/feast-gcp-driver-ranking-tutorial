@@ -13,7 +13,7 @@ This tutorial uses Feast with [Scikit Learn](https://scikit-learn.org/stable/) t
 
 
 ### Prerequisites 
-This tutorial requires that you have an account on GCP and have access to read and write to BigQuery and install [Google Cloud CLI](https://cloud.google.com/sdk/gcloud) for your host platform.
+To successfully run this turtorial, it requires that you have an account on GCP and have access to read and write permissions to BigQuery. Also, you need to install [Google Cloud CLI](https://cloud.google.com/sdk/gcloud) for your localhost platform.
 
 ### Tutorial
 
