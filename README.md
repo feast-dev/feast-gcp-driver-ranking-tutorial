@@ -4,7 +4,7 @@
 
 Making a prediction using a linear regression model is a common use case in ML. In this guide tutorial, we build the model that predicts if a driver will complete a trip based on a number of features ingested into Feast.
 
-The basic local mode gives you ability to quickly try Feast, while the advance mode shows how you can use Feast in a production setting, in particular for the GCP cloud. 
+The basic local mode gives you ability to quickly try Feast, while the advanced mode shows how you can use Feast in a production setting, in particular for the Google Cloud Platform (GCP) cloud. 
 
 This tutorial uses Feast with [Scikit Learn](https://scikit-learn.org/stable/) to
 1. Train a model locally using data from [BigQuery](https://cloud.google.com/bigquery/)
@@ -13,7 +13,7 @@ This tutorial uses Feast with [Scikit Learn](https://scikit-learn.org/stable/) t
 
 
 ### Prerequisites 
-To successfully run this turtorial, it requires that you have an account on GCP and have access to read and write permissions to BigQuery. Also, you need to install [Google Cloud CLI](https://cloud.google.com/sdk/gcloud) for your localhost platform.
+To successfully run this tutorial, it requires that you have an account on GCP and have access to read and write permissions to BigQuery. Also, you need to install [Google Cloud CLI](https://cloud.google.com/sdk/gcloud) for your localhost platform.
 
 ### Tutorial
 
