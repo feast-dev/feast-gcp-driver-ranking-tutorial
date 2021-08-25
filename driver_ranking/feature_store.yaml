@@ -1,3 +1,6 @@
 project: driver_ranking
 registry: data/registry.db
 provider: local
+offline_store:
+  type: bigquery
+  dataset: feast_bq_dataset
