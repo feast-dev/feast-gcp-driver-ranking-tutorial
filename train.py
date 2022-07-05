@@ -13,7 +13,7 @@ fs = feast.FeatureStore(repo_path="driver_ranking/")
 # Retrieve training data from BigQuery
 training_df = fs.get_historical_features(
     entity_df=orders,
-    feature_refs=[
+    features=[
         "driver_hourly_stats:conv_rate",
         "driver_hourly_stats:acc_rate",
         "driver_hourly_stats:avg_daily_trips",
